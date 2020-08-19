@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Randale Reyes</title>
+        
+        <style>
+            :root {
+                --profile-pic-size: 250px;
+                --profile-pic-border-width: 10px;
+                --title-left-margin: 450px;
+                --title-right-margin: 450px;
+            }
+
+            @media (max-width: 1500px) {
+                :root {
+                    --profile-pic-size: 0px;
+                    --profile-pic-border-width: 0px;
+                    --title-left-margin: auto;
+                    margin-right: 0px;
+                }
+            }
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 90px;
+                border-color: black;
+                border-style: solid;
+                border-width: 10px;
+                border-radius: 10px;
+                background-color: gray;
+                padding: 25px;
+                padding-top 10px;
+                padding-bottom: 100px;
+                padding-left: 100px;
+                padding-right: 100px;
+                margin-top: 25px;
+                margin-left: var(--title-left-margin);
+                margin-right: 450px;
+                margin-bottom: -100px;
+            }
+            
+            h2 {
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 5px;
+                padding-top: 1px;
+            }
+            
+            body {
+                background-color: maroon;
+                font-family: monospace;
+            }
+            
+            .image-border-left {
+                float: left;
+                border-color: black;
+                border-style: solid;
+                border-width: var(--profile-pic-border-width);
+                border-radius: 50%;
+                margin: -250px 30px 0px 85px;
+                width: var(--profile-pic-size);
+            }
+            
+            .social-media {
+                text-align: right;
+                font-size: 45px;
+                margin-right: 85px;
+                margin-top: -230px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Randale Reyes</h1>
+        
+        <h2>A Page Dedicated to Him</h2>
+        
+        <img class="image-border-left" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/11295651_1676232709272137_193461725345964151_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=EhulG37f9DgAX-E4epZ&_nc_ht=scontent-sjc3-1.xx&oh=7b5f27f1e59367ffb6d58f5cfab7e7d0&oe=5F60638E" >
+        
+        <p class="social-media">@red4mario</p>
+        
+    </body>
+</html>
