@@ -1,17 +1,19 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
     <head>
         <title>Randale Reyes</title>
         
+        
         <style>
-            :root {
-                --profile-pic-size: 250px;
+            :root { /* For Window Resizing */
+                --profile-pic-size: 190px;
                 --profile-pic-border-width: 10px;
                 --title-left-margin: 450px;
                 --title-right-margin: 450px;
             }
-
-            @media (max-width: 1500px) {
+            
+            
+            @media (max-width: 1500px) {    /* For Window Resizing */
                 :root {
                     --profile-pic-size: 0px;
                     --profile-pic-border-width: 0px;
@@ -19,10 +21,34 @@
                     margin-right: 0px;
                 }
             }
+            
+/*            To push Content away from topPart*/
+            .idk{   
+                height: 225px;
+            }
+            
+            .topPart {
+                background-color: maroon;
+                border: 1px solid maroon;
+                border-radius: 5px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                
+                margin: auto;
+                position: fixed;
+                top: 0px;
+                left: 1%;
+                right: 1%;
+            }
+            
+            .temp {
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+            
             h1 {
-                color: white;
                 text-align: center;
-                font-size: 90px;
+                color: white;
+                font-size: 75px;
                 border-color: black;
                 border-style: solid;
                 border-width: 10px;
@@ -30,21 +56,29 @@
                 background-color: gray;
                 padding: 25px;
                 padding-top 10px;
-                padding-bottom: 100px;
+                padding-bottom: 65px;
                 padding-left: 100px;
                 padding-right: 100px;
-                margin-top: 25px;
-                margin-left: var(--title-left-margin);
-                margin-right: 450px;
-                margin-bottom: -100px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                margin-left: 25%;   
+                margin-right: 25%;
             }
             
             h2 {
                 color: white;
                 text-align: center;
-                font-size: 40px;
-                margin-top: 5px;
+                font-size: 25px;
+                margin-top: -100px;
+                margin-bottom: 55px;
                 padding-top: 1px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            
+            h3 {
+                font-weight: bold;
+                font-size: 30px;
             }
             
             body {
@@ -58,26 +92,170 @@
                 border-style: solid;
                 border-width: var(--profile-pic-border-width);
                 border-radius: 50%;
-                margin: -250px 30px 0px 85px;
+                
+                margin-left: 6%;
+                margin-right: 2%;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                
+                
                 width: var(--profile-pic-size);
             }
             
             .social-media {
-                text-align: right;
+                float: right;
                 font-size: 45px;
-                margin-right: 85px;
-                margin-top: -230px;
             }
+            
+            menu {
+                
+                position: fixed;
+                float: left;
+                width: 325px;
+                background-color: white;
+                font-size: 30px;
+                padding: 0px;
+                border-style: solid;
+                border-width: 0px;
+                border-radius: 10px;
+                margin-left: 1%;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            
+            menu a{
+                color: black;
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+                font-weight: bold;
+                
+            }
+            
+            menu a:hover {
+                background-color: gray; /* Dark grey background on mouse-over */
+                color: white;
+                border-width: 0px;
+                border-radius: 10px;
+            }
+
+
+            menu a:active {
+                background-color: lightgray;   
+                border-width: 0px;
+                border-radius: 10px;
+                color: white;
+            }
+            
+            menu a:focus {
+                background-color: black;   
+                border-width: 0px;
+                border-radius: 10px;
+                color: white;
+            }
+            :target {
+                color: maroon;
+            }
+            menu a.focus {
+                background-color: gray; /* Add a green color to the "active/current" link */
+                border-width: 0px;
+                border-radius: 10px;
+                color: white;
+            }
+            
+            content {
+                float: left;
+                margin-top: 30px;
+                margin-left: 385px;
+                margin-bottom: 20px;
+
+                width: 76.5%;
+                font-size: 25px;
+              
+                
+
+                background-color: white;
+                border-style: solid;
+                border-width: 0px;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                padding-top: 0px;
+                padding-left: 20px;
+            }
+
+            #early-life {
+                padding-top: 270px;
+                margin-top: -250px;
+            }
+            #interests {
+                padding-top: 250px;
+                margin-top: -250px;
+            }
+            #public-image {
+                padding-top: 250px;
+                margin-top: -250px;
+            }
+            #impact {
+                padding-top: 250px;
+                margin-top: -250px;
+            }
+            #filmography {
+                padding-top: 250px;
+                margin-top: -250px;
+            }
+            #gallary {
+                padding-top: 250px;
+                margin-top: -250px;
+            }
+            
+            .tab { text-indent:40px }
+
         </style>
     </head>
     <body>
-        <h1>Randale Reyes</h1>
-        
-        <h2>A Page Dedicated to Him</h2>
-        
-        <img class="image-border-left" src="img/randale-profile-pic.jpg" alt="Randale's Profile Picture">
-        
-        <p class="social-media">@red4mario</p>
+        <div class="idk">
+            <div class="topPart" >
+            
+                <img class="image-border-left" style="vertical-align:middle" src="img/randale-profile-pic.jpg" alt="Randale's Profile Picture">
+            
+                <h1>Randale Reyes</h1>
+            
+                <h2>A Page Dedicated to Him</h2>
+                
+            </div>
+        </div>
+        <menu>
+            <a href="#early-life" >Early Life</a>
+            <a href="#interests" >Interests</a>
+            <a href="#public-image" >Public Image</a>
+            <a href="#impact" >Impact</a>
+            <a href="#filmography" >Filmography</a>
+            <a href="#gallary" >Gallary</a>
+        </menu>
+        <content>
+            
+            <h3 id="early-life" >Early Life</h3>
+            <p class="tab"> Randale Reyes was born on December 4. His Birthday is on December 4. Randale went to a middle school that starts with the letter "V". I do not remember the name of the school. After that, he went to a high school with "college" in the name, but it is not a college. It is a high school. Randale now goes to a public university in the United States.
+                At one point in his life, Randale was shorter than 5'0". Now, Randale is taller than 5'0". 
+            </p>
+            <h3 id="interests">Interests</h3>
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.
+            Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <h3 id="public-image">Public Image</h3>
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.
+            Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <h3 id="impact">Impact</h3>
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+            Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <h3 id="filmography">Filmography</h3>
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+            Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <h3 id="gallary">Gallary</h3>
+            
+        </content>
+        <p class="temp">
+            
+
+        </p>
         
     </body>
 </html>
