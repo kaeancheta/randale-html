@@ -244,6 +244,17 @@
                 margin-top: -210px;
             }
             
+            .pics {
+                width: 200px;
+                height: 500px;
+                margin-right: 5px;
+                margin-bottom: 20px;
+            }
+
+            .dispair {
+                width: 300px;
+            }
+            
             .tab { text-indent:40px }
             
             ul {
